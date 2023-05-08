@@ -64,20 +64,20 @@
                 switch (type) {
                     case "sports":
                         this.type = "sports";
-                        this.maxSpeed = 600;
-                        this.accelerateIncrement = 80;
-                        this.brakeIncrement = 30;
+                        this.maxSpeed = 700;
+                        this.accelerateIncrement = 50;
+                        this.brakeIncrement = 50;
                     case "SUV":
                         this.type = "SUV";
-                        this.maxSpeed = 400;
+                        this.maxSpeed = 500;
                         this.accelerateIncrement = 50;
-                        this.brakeIncrement = 20;
+                        this.brakeIncrement = 50;
                 }
             }
 
             // Method to stop the car completely
             stop() {
-                if (this.speed != 0) {
+                if (this.speed !== 0) {
                     return `Please apply brake .... your current speed is ${this.speed} mph`;
                 } else {
                     this.speed = 0;
